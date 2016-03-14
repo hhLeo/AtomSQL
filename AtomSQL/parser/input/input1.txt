@@ -1,0 +1,13 @@
+create database A;
+use A;
+create database E;
+drop table customer10;
+create table customer10(id int(10) not null, name varchar(25) not null, gender varchar(1) not null, primary key(name));
+desc customer9;
+use B;
+show tables;
+use A;
+show tables;
+desc customer10;
+drop database G;
+

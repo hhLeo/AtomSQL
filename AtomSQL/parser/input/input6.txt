@@ -1,0 +1,5 @@
+use A;
+insert into customer10 values (null, 'ab', null);
+select * from customer10 where name = 'ab';
+update customer10 set id = 4 + id where name = 'ab';
+

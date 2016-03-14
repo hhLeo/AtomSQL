@@ -1,0 +1,16 @@
+CREATE DATABASE tempDB;
+
+USE tempDB;
+
+CREATE TABLE publisher(
+id int(10) NOT NULL,
+name varchar(25) NOT NULL,
+state varchar(25) NOT NULL,
+PRIMARY KEY(id)
+);
+
+SHOW TABLES;
+
+DESC publisher;
+
+

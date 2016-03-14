@@ -1,0 +1,8 @@
+use A;
+create table test1(id int(10) not null, name varchar(25) not null, gender varchar(1) not null, primary key(name));
+create table test2(however_id int(10) not null, ucore varchar(25) not null, sex varchar(1) not null, primary key(however_id));
+insert into test1 values (32, 'ab', 'f'), (45, 'cd', 'g'), (67, 'ef', 'h');
+insert into test2 values (88, 'pq', 'i'), (99, 'rs', 'j'), (95, 'tu', 'k');
+select * from test1 where test1.id < 60;
+select * from test1, test2 where test1.id<test2.however_id and test1.gender='g' and test2.sex='i';
+

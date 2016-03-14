@@ -1,0 +1,3 @@
+use myDB1;
+select customer.name, book.title, orders.quantity from customer, book, orders where customer.id = orders.customer_id and book.id = orders.book_id and orders.quantity >= 4;
+

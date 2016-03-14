@@ -1,0 +1,5 @@
+use orderDB;
+select book.title, orders.quantity from book, orders where book.id = orders.book_id and orders.quantity > 8;
+select sum(quantity), count(quantity), avg(quantity), max(quantity), min(quantity) from orders;
+select customer_id, sum(quantity), count(quantity), avg(quantity), max(quantity), min(quantity) from orders group by customer_id;
+select 'ab', id, id/2, 5, authors from book where authors = 'Anthony Boucher';

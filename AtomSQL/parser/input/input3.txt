@@ -1,0 +1,4 @@
+use A;
+delete from customer10 where id = 67 or id = 32;
+show tables;
+

@@ -1,0 +1,78 @@
+系统管理模块
+
+CREATE DATABASE tempDB;
+
+USE tempDB;
+
+CREATE TABLE publisher(
+id int(10) NOT NULL,
+name varchar(25) NOT NULL,
+state varchar(25) NOT NULL,
+PRIMARY KEY(id)
+);
+
+SHOW TABLES;
+
+DESC publisher;
+
+DROP TABLE publisher;
+
+DROP DATABASE tempDB;
+
+
+查询解析模块
+
+INSERT INTO publisher VALUES (105001, ‘American Technical Publisher’, ‘GA’);
+SELECT * FROM publisher WHERE id = 105001;
+
+INSERT INTO customer VALUES (300002, ‘CHAD CABELLO’, ‘F’);
+主键重复，应报错
+
+INSERT INTO orders VALUES (304403, 200001, ‘八’);
+数据类型是整形，不能插入字符串，应报错
+
+DELETE FROM orders WHERE quantity < 2;
+SELECT * FROM orders WHERE quantity < 2;
+
+UPDATE book SET title=’Nine Times Nine’ WHERE authors=’David Ray’;
+SELECT title FROM book WHERE authors=’David Ray’;
+
+UPDATE book SET copies=’eight’ WHERE title=’A Walk Through the Fire’;
+数据类型是整形，不能更新成字符串，应报错
+
+SELECT * FROM publisher WHERE state=’CA’;
+
+SELECT title FROM book WHERE authors is null;
+
+SELECT book.title, publisher.name, publisher.state FROM book, publisher WHERE book.publisher_id=publisher.id AND publisher.state=’CA’;
+
+
+附加模块
+
+域完整性约束
+INSERT INTO customer VALUES (307001, ‘CHAD CABELLO’, ‘Male’);
+UPDATE publisher SET state=’HI’ WHERE name=’New Video Group Inc’;
+
+外键约束
+UPDATE book SET publisher_id=’106001’ WHERE title=’A Voice Through a Cloud’;
+
+模糊匹配
+SELECT name, gender FROM customer WHERE name like ’_USTY%’;
+
+三个表以上的连接
+SELECT customer.name,book.title,orders.quantity FROM customer,book,orders WHERE orders.customer_id=customer.id AND orders.book_id=book.id AND orders.quantity > 8;
+
+聚集查询
+SELECT SUM(quantity) FROM orders WHERE customer_id=304403; 
+SELECT AVG(quantity) FROM orders WHERE customer_id=304403; 
+SELECT MAX(quantity) FROM orders WHERE customer_id=304403; 
+SELECT MIN(quantity) FROM orders WHERE customer_id=304403;
+SELECT COUNT(*) FROM orders WHERE customer_id=304403;
+
+分组聚集查询
+SELECT customer_id,SUM(quantity) FROM orders GROUP BY customer_id; 
+
+查询结果排序
+SELECT * FROM orders WHERE customer_id=304403 ORDER BY quantity DESC; 
+
+

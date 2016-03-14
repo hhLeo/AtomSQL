@@ -1,0 +1,4 @@
+use myDB;
+select book.title, orders.quantity from book, orders where book.id = orders.book_id and orders.quantity > 8;
+select 'ab', id, id/2, 5, -10-id, 4+id*2, id*id authors from book where id > 200290;
+

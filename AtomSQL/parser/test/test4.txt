@@ -1,0 +1,4 @@
+use orderDB;
+select * from publisher where state = 'GA';
+select title from book where authors is null;
+

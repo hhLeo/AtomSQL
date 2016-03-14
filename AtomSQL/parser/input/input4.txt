@@ -1,0 +1,5 @@
+use A;
+select 'ad', 5/2, 3, id, id+id*7, id*id+id, gender, name from customer10 where id = 45 or name = 'ab';
+select * from customer10 where id = 45;
+show tables;
+

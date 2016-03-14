@@ -1,0 +1,7 @@
+use orderDB;
+select * from book where authors = 'Anthony Boucher';
+update book set title = 'Ten Times Nine' where authors = 'Anthony Boucher';
+UPDATE book SET copies='eight' WHERE title='A Walk Through the Fire';
+select * from book where title = 'A Walk Through the Fire';
+select * from book where authors = 'Anthony Boucher';
+

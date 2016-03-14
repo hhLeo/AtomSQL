@@ -1,0 +1,27 @@
+use A;
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+insert into customer10 values (32, 'ab', 'f'), (45, 'cd', 'f'), (67, 'ef', 'f');
+show tables;
+

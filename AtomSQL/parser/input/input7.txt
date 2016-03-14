@@ -1,0 +1,10 @@
+use A;
+select * from customer10 where name = 'ab';
+update customer10 set gender = 'm' where id = 45 or name = 'ab';
+select * from customer10 where id = 45;
+update customer10 set id = 68 where id > 46 and id < 69;
+select * from customer10 where id is null;
+update customer10 set id = 71 where id is null;
+select * from customer10 where id > 69;
+show tables;
+

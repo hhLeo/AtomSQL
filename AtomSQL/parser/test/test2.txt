@@ -1,0 +1,5 @@
+use orderDB;
+select * from orders where quantity < 2;
+delete from orders where quantity < 2;
+select * from orders where quantity < 2;
+

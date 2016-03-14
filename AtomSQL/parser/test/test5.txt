@@ -1,0 +1,4 @@
+use orderDB;
+select customer_id, sum(quantity), count(quantity), avg(quantity), max(quantity), min(quantity) from orders group by customer_id;
+select sum(quantity), count(quantity), avg(quantity), max(quantity), min(quantity) from orders;
+
